@@ -3,7 +3,7 @@ $(function(){
 	$('#artist-search').submit(function(event){
 		event.preventDefault();
 		var searchTerm = $('#my-artist').val();
-		$.ajax(getArtist, {
+		$.ajax(getArtist, {     //wouldn't work with .getJSON()
 			data: {
 	    		q: searchTerm
 	    	},
@@ -14,6 +14,7 @@ $(function(){
 			}
 		});
 	});
+	//next step: insert newly found artist id in related-artist end point
 });
 
 
