@@ -7,13 +7,14 @@
 html {
 	width: 100%;
 	height: 100%;
-	background-color: #84BD00;
 }
 
 
 .container {
-	max-width: 700px;
+	max-width: 100%;
 	margin: 0 auto;
+	background-color: #84BD00;
+	padding-bottom: 50px;
 }
 
 p {
@@ -36,6 +37,8 @@ input {
 	height: 50px;
 	width: 300px;
 	font-size: 1.5em;
+	border: solid 2px #84BD00;
+	padding-left: 5px;
 }
 
 button {
@@ -51,3 +54,10 @@ button {
 	border-radius: 5px;
 }
 
+:focus {
+	outline: none;
+}
+
+#search-results {
+	max-width: 80%;
+}
